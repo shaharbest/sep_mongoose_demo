@@ -1,7 +1,11 @@
-const user = 'sep-user';
-const password = 'KAa79pdGuHIXWCrx';
-const host = 'shaharbakery.7kyir.mongodb.net';
-const database = 'september-fs';
+require('dotenv').config();
+
+const {
+    MONGO_USER: user,
+    MONGO_PASSWORD: password,
+    MONGO_HOST: host,
+    MONGO_DB: database
+} = process.env;
 
 const mongoUrl = 
     `mongodb+srv://${user}:${password}@${host}/${database}?retryWrites=true&w=majority`;

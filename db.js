@@ -14,7 +14,7 @@ async function getAllProducts() {
     return await Product.find();
 }
 
-module.export = {
+module.exports = {
     connect,
     disconnect,
     getAllProducts
